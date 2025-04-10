@@ -1,0 +1,57 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+# created-by: conda 25.3.0
+@EXPLICIT
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/ca-certificates-2025.1.31-h56e8100_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/intel-openmp-2024.2.1-h57928b3_1083.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/python_abi-3.9-6_cp39.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/ucrt-10.0.22621.0-h57928b3_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libwinpthread-12.0.0.r4.gg4f2fc60ca-h57928b3_9.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/vc14_runtime-14.42.34438-hfd919c2_26.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/vc-14.3-h2b53caa_26.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/bzip2-1.0.8-h2466b09_7.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libffi-3.4.6-h537db12_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libiconv-1.18-h135ad9c_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/liblzma-5.8.1-h2466b09_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libsqlite-3.49.1-h67fdade_2.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libzlib-1.3.1-h2466b09_2.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/openssl-3.5.0-ha4e3fda_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/tk-8.6.13-h5226925_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libxml2-2.13.7-h442d1da_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/python-3.9.21-h37870fc_1_cpython.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/brotli-python-1.1.0-py39ha51f57c_2.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/certifi-2025.1.31-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/charset-normalizer-3.4.1-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/hpack-4.1.0-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/idna-3.10-pyhd8ed1ab_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libhwloc-2.11.2-default_ha69328c_1001.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/python-dotenv-1.1.0-pyh29332c3_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/python-tzdata-2025.2-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/pytz-2024.1-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/setuptools-78.1.0-pyhff2d567_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/six-1.17.0-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/soupsieve-2.5-pyhd8ed1ab_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/typing_extensions-4.13.1-pyh29332c3_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/wheel-0.45.1-pyhd8ed1ab_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/win_inet_pton-1.1.0-pyh7428d3b_8.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/cffi-1.17.1-py39ha55e580_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/h2-4.2.0-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/pip-25.0.1-pyh8b19718_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/pysocks-1.7.1-pyh09c184e_7.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/python-dateutil-2.9.0.post0-pyhff2d567_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/tbb-2021.13.0-h62715c5_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/typing-extensions-4.13.1-hf5ce1d7_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/beautifulsoup4-4.13.3-pyha770c72_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/mkl-2024.2.2-h66d3029_15.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/zstandard-0.23.0-py39ha55e580_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libblas-3.9.0-31_h641d27c_mkl.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/urllib3-2.3.0-pyhd8ed1ab_0.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/libcblas-3.9.0-31_h5e41251_mkl.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/liblapack-3.9.0-31_h1aa476e_mkl.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/noarch/requests-2.32.3-pyhd8ed1ab_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/numpy-2.0.2-py39h60232e0_1.conda
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/win-64/pandas-2.2.3-py39h2366fc2_2.conda
