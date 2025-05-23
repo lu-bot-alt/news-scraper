@@ -1,4 +1,3 @@
-```markdown
 # 新浪新闻热点分析爬虫项目 README
 
 ---
@@ -104,10 +103,10 @@ def save_to_csv(posts, filename='weibo_posts.csv'):
 |------------------|--------------------------------------------------------------------------|
 | **词云生成**     | `jieba` 分词 + `WordCloud` 生成可视化词云                                |
 | **词频统计**     | `pandas.Series.plot` 绘制高频词条形图                                   |
-| **情感分析**     | `snownlp` 实现情感评分，支持按天聚合趋势分析                             |
-| **交互式图表**   | `Plotly` 生成可缩放、可下载的动态传播趋势图                              |
+| **情感分析（尚未实现）**     | `snownlp` 实现情感评分，支持按天聚合趋势分析                             |
+| **交互式图表（尚未实现）**   | `Plotly` 生成可缩放、可下载的动态传播趋势图                              |
 | **中文支持**     | 显式指定 `simhei.ttf` 字体，强制解决中文乱码问题                         |
-| **拓展功能**     | 调用HuggingFace上的语言模型进行情感分析                        |
+| **拓展功能（见LLM_Sent_Analysis库）**     | 调用HuggingFace上的语言模型进行情感分析                        |
 
 ---
 
@@ -161,7 +160,7 @@ if __name__ == "__main__":
 ```
 XLWBscraper/
 ├── data/             # 原始采集数据
-├── visualizations/   # 输出图表（wordcloud.png, sentiment_trend.png, trend_plot.html 等）
+├── visualizations/   # 输出图表（词云图 wordcloud.png, 高频词汇词频图 word_frquency.png, 热点新闻传播趋势图 trend_plot.png）
 ├── stopwords.txt     # 自定义停用词文件
 ├── simhei.ttf、SentyEtherealWander.ttf、MSYH.TTC  # 中文字体文件
 ├── logs/             # 输出日志文件
@@ -198,10 +197,11 @@ XLWBscraper/
 ## 📈 核心输出示例
 | 输出文件                     | 说明                           |
 |----------------------------|--------------------------------|
-| `wordcloud.png`            | 新闻关键词词云                 |
-| `word_frequency.png`       | 高频词前30名条形图             |
-| `sentiment_trend.png`      | 每日平均情感评分（0-1）        |
-| `trend_plot_interactive.html` | 可缩放、可下载的动态传播趋势图 |
+| `data/merged_news_data`         | 去重聚合的新闻合集             |
+| `visualizations/wordcloud.png`            | 新闻关键词词云                 |
+| `visualizations/word_frequency.png`       | 高频词前30名条形图             |
+| `visualizations/trend_plot.png` | 热点新闻传播趋势图 |
+
 
 ---
 
@@ -230,9 +230,12 @@ XLWBscraper/
 - [Matplotlib 中文显示指南](https://matplotlib.org/stable/tutorials/text/usetex.html)
 
 ---
+## 🤖 测试
+该项目截至2025年5月23日，测试未出现问题，提取自2025年3月1日至今日的新闻共3473条
+
+---
 
 ## 📞 联系方式
 如有疑问或需要协作开发，请联系：
 - GitHub: https://github.com/lu-bot-alt/news-scraper
 - 邮箱: qwe20041102@163.com
-``` 
