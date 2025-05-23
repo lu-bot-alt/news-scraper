@@ -15,7 +15,92 @@
 ---
 
 ## 🚀 功能亮点
-| 功能模块         | 技术实现                                                                 |
+
+### 🐛 新浪微博网页数据爬取
+
+#### 技术栈
+1. **Python**：用于编写爬虫脚本。
+2. **requests**：用于发送HTTP请求获取网页内容。
+3. **BeautifulSoup（bs4）**：解析HTML文档，提取所需信息。
+4. **selenium**（可选）：当需要处理动态加载的内容或登录验证时使用。
+5. **time**：控制请求频率，避免触发反爬机制。
+6. **pandas**：用于数据清洗和预处理。
+
+#### 方法介绍
+##### 1. 确定目标与合法性检查
+- 在开始之前，请确保遵守新浪微博的服务条款和robots协议（网页后缀改为robots.txt）。
+- 对于公开数据，通常可以直接抓取；但对于用户隐私数据，则需特别注意并遵循相关法律法规。
+
+##### 2. 登录与身份验证
+由于新浪微博的部分内容可能需要登录后才能访问，因此你可能需要模拟登录过程。这里有两种主要方式：
+- 使用`requests.Session()`结合POST请求模拟登录。
+- 使用`selenium`驱动浏览器完成登录流程。
+
+###### 示例：使用`selenium`模拟登录
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+def weibo_login(username, password):
+    driver = webdriver.Chrome()  # 需要安装对应版本的ChromeDriver
+    driver.get('https://weibo.com/login.php')
+    
+    # 输入用户名和密码，并点击登录按钮
+    driver.find_element(By.NAME, 'username').send_keys(username)
+    driver.find_element(By.NAME, 'password').send_keys(password)
+    driver.find_element(By.XPATH, '//a[@action-type="btn_submit"]').click()
+    
+    # 等待页面加载完成
+    time.sleep(5)
+    
+    return driver
+```
+
+##### 3. 数据抓取
+一旦成功登录或确认不需要登录即可访问所需内容，接下来就是根据页面结构定位并抓取数据。
+
+###### 示例：使用`BeautifulSoup`抓取微博内容
+```python
+import requests
+from bs4 import BeautifulSoup
+
+def scrape_weibo_page(url):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    }
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    # 假设每条微博都在<li class="weibo-item">标签内
+    posts = []
+    for post in soup.find_all('li', {'class': 'weibo-item'}):
+        content = post.find('div', {'class': 'content'}).text.strip()
+        posts.append(content)
+    
+    return posts
+```
+
+##### 4. 数据存储与分析
+- 将抓取的数据保存为CSV文件或其他格式以便后续分析。
+- 利用`pandas`进行数据分析，如统计词频、生成词云等。
+
+###### 示例：保存为CSV
+```python
+import pandas as pd
+
+def save_to_csv(posts, filename='weibo_posts.csv'):
+    df = pd.DataFrame(posts, columns=['Content'])
+    df.to_csv(filename, index=False, encoding='utf-8-sig')
+```
+
+#### 注意事项
+- **反爬机制**：为了避免被封IP或账号，建议合理设置请求间隔（如使用`time.sleep(random.uniform(1, 3))`），并且可以考虑使用代理IP。
+- **动态内容**：如果目标网站大量采用JavaScript动态加载内容，那么仅靠`requests`+`BeautifulSoup`可能无法满足需求，此时可以转向`selenium`或者尝试分析Ajax请求直接获取数据源。
+
+### 🖥️ 数据可视化
+
+| 数据分析模块         | 技术实现                                                                 |
 |------------------|--------------------------------------------------------------------------|
 | **词云生成**     | `jieba` 分词 + `WordCloud` 生成可视化词云                                |
 | **词频统计**     | `pandas.Series.plot` 绘制高频词条形图                                   |
